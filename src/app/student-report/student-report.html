@@ -1,0 +1,43 @@
+<h2>Phase 4: Student Report</h2>
+<div class="card">
+  <div class="filters">
+    <input type="number" placeholder="Search by Student ID" (input)="onSearch($event)">
+    <select (change)="onFilter($event)">
+      <option value="">All Classes</option>
+      <option value="Class1">Class1</option>
+      <option value="Class2">Class2</option>
+      <option value="Class3">Class3</option>
+      <option value="Class4">Class4</option>
+      <option value="Class5">Class5</option>
+    </select>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Student ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Date of Birth</th>
+        <th>Class</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of page?.content">
+        <td>{{ student.studentId }}</td>
+        <td>{{ student.firstName }}</td>
+        <td>{{ student.lastName }}</td>
+        <td>{{ student.dob }}</td>
+        <td>{{ student.studentClass }}</td>
+        <td>{{ student.score }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination" *ngIf="page">
+    <button (click)="goToPage(page.number - 1)" [disabled]="page.first">Previous</button>
+    <span>Page {{ page.number + 1 }} of {{ page.totalPages }}</span>
+    <button (click)="goToPage(page.number + 1)" [disabled]="page.last">Next</button>
+  </div>
+</div>

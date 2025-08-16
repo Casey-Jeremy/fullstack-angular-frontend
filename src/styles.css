@@ -1,1 +1,112 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global Styles */
+:root {
+    --primary-color: #007bff;
+    --primary-hover-color: #0056b3;
+    --background-color: #f4f7f9;
+    --card-background-color: #ffffff;
+    --text-color: #333;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 2rem;
+  }
+  
+  h1, h2 {
+    color: var(--primary-color);
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+  }
+  
+  hr {
+    border: none;
+    border-top: 1px solid var(--border-color);
+    margin: 2rem 0;
+  }
+  /* Card Styling */
+.card {
+    background-color: var(--card-background-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    margin-bottom: 1rem;
+  }
+  
+  /* Form Elements Styling */
+  input[type="file"], input[type="number"], select {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+  
+  button {
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: var(--primary-hover-color);
+  }
+  
+  button:disabled {
+    background-color: #a0c7f0;
+    cursor: not-allowed;
+  }
+  
+  /* Report Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+  }
+  
+  th, td {
+    border: 1px solid var(--border-color);
+    padding: 0.8rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #e9ecef;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .filters, .pagination {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .pagination {
+    justify-content: center;
+  }
+  
+  .pagination span {
+    margin: 0 1rem;
+  }
+  
+  .message {
+    margin-top: 1rem;
+    color: var(--primary-color);
+    font-weight: bold;
+  }

@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
+import { Component } from '@angular/core';
+import { DataProcessingComponent } from './data-processing/data-processing';
+import { DataUploadComponent } from './data-upload/data-upload'; 
+import { StudentReportComponent } from './student-report/student-report';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [DataProcessingComponent, DataUploadComponent, StudentReportComponent], 
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
-export class App {
-  protected readonly title = signal('fullstack-student-app');
+export class AppComponent {
+  title = 'fullstack-student-app';
 }

@@ -1,0 +1,17 @@
+<h2>Phase 3: Upload CSV to Database</h2>
+<div class="card">
+    <div *ngIf="!isUploading">
+        <input type="file" (change)="onFileSelected($event)" accept=".csv">
+        <button (click)="onUpload()" [disabled]="!selectedFile">Upload to Database</button>
+    </div>
+
+    <div *ngIf="isUploading">
+        <p>{{ message }}</p>
+        <progress [value]="progress" max="100"></progress>
+        <span> {{ progress }}%</span>
+    </div>
+
+    <div *ngIf="!isUploading && message" class="message">
+        <p>{{ message }}</p>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<h2>Phase 2: Process Excel to CSV</h2>
+<div class="card">
+  <input type="file" (change)="onFileSelected($event)" accept=".xlsx">
+  <button (click)="onUpload()" [disabled]="!selectedFile">Process and Upload</button>
+  
+  <div *ngIf="message" class="message">
+    <p>{{ message }}</p>
+  </div>
+</div>
