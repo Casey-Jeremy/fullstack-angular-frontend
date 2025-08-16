@@ -417,13 +417,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ### 🎨 **Ready to Build Amazing Angular Apps?**
 
 ```bash
-git clone <your-frontend-repo-url>
+git clone (https://github.com/Casey-Jeremy/fullstack-angular-frontend)
 cd fullstack-student-app
 npm install && ng serve
 ```
 
 **⭐ Don't forget to star this repo if you found it helpful!**
-
-*Built with 💖 using Angular & TypeScript*
 
 </div>
