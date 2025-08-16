@@ -146,7 +146,7 @@ must be running on port 8080
 
 ```bash
 # Clone the repository
-git clone <your-frontend-repo-url>
+git clone (https://github.com/Casey-Jeremy/fullstack-angular-frontend)
 cd fullstack-student-app
 
 # Install all dependencies
