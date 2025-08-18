@@ -25,20 +25,6 @@
 
 </div>
 
-<details>
-<summary>📸 <strong>How to Add Your Screenshot</strong></summary>
-
-> **📝 Perfect Screenshot Guide:**
-> 
-> 1. 🖥️ **Run the application**: `ng serve`
-> 2. 🌐 **Navigate to**: `http://localhost:4200`
-> 3. 📊 **Ensure all three main sections are visible**
-> 4. 📸 **Take a screenshot and save as `app-screenshot.png`**
-> 5. 📁 **Place in the `src/assets/` directory**
-> 6. ✅ **The README will automatically display it!**
-
-</details>
-
 ---
 
 ## ✨ Key Features
