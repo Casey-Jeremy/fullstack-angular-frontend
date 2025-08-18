@@ -54,6 +54,14 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
+  // Method for Phase 1 (Data Generation)
+  generateExcel(recordCount: number): Observable<string> {
+    const params = new HttpParams().set('count', recordCount.toString());
+    
+    // NOTE: This uses GET, which we set up for easy browser testing.
+    return this.http.get(`${this.baseUrl}/generate`, { params, responseType: 'text' });
+  }
+
   // Method for Phase 2 (Data Processing)
   processExcel(file: File): Observable<string> {
     const formData = new FormData();

@@ -1,0 +1,9 @@
+<h2>Phase 1: Generate Excel File</h2>
+<div class="card">
+  <input type="number" placeholder="Enter number of records" [(ngModel)]="recordCount">
+  <button (click)="onGenerate()" [disabled]="!recordCount || isLoading">Generate File</button>
+
+  <div *ngIf="message" class="message">
+    <p>{{ message }}</p>
+  </div>
+</div>
