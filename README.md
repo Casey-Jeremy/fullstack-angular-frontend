@@ -270,7 +270,7 @@ ng serve
 
 | 🔥 **Method** | 🎯 **Endpoint** | 📝 **Frontend Usage** |
 |---------------|-----------------|----------------------|
-| **POST** | `/api/students/generate` | 🏭 Trigger Excel file generation |
+| **POST** | `/api/students/generate` e.g `http://localhost:8080/api/students/generate?count=1000` | 🏭 Trigger Excel file generation |
 | **POST** | `/api/students/process-excel` | 🔄 Upload and convert Excel to CSV |
 | **POST** | `/api/students/upload-csv` | ⬆️ Upload CSV with progress tracking |
 | **GET** | `/api/students/progress` | 📡 Real-time progress updates (SSE) |
