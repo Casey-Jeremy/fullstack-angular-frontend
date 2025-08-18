@@ -19,7 +19,7 @@
 
 <div align="center">
 
-![Student Data Processor Screenshot](src/app-screenshot.png1)
+![Student Data Processor Screenshot](src/app-screenshot.png?1)
 
 *✨ Clean, modern interface designed for efficiency and user experience*
 
