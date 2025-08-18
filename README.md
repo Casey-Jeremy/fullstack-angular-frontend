@@ -378,20 +378,6 @@ ng generate component    # Create new component
 </tr>
 </table>
 
-<details>
-<summary>🔧 <strong>Development Workflow</strong></summary>
-
-1. **🍴 Fork** the repository
-2. **📥 Clone** your fork: `git clone <your-fork>`
-3. **🌿 Create** feature branch: `git checkout -b feature/amazing-feature`
-4. **💻 Develop** your feature with tests
-5. **🧪 Test** thoroughly: `ng test` && `ng lint`
-6. **📝 Commit** with clear message: `git commit -m 'Add amazing feature'`
-7. **🚀 Push** to your fork: `git push origin feature/amazing-feature`
-8. **🔄 Create** Pull Request with detailed description
-
-</details>
-
 ## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
